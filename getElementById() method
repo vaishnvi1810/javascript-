@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <style type="text/css">
+      div {
+         height: 100px;
+         line-height: 100px;
+         color: blue;
+         text-align: center;
+         padding-left: 20px;
+         padding-right: 20px;
+      }
+   </style>
+</head>
+<body>
+<center>
+<h1>Hello Vaishnvi</h1>
+   <div onclick="changeColor(this)" style="background-color: yellow;">
+       change color!
+   </div>
+<p id="demo">Welcome to my world </p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Life is very beautiful"'>touch me!</button>
+
+   <script>
+      function changeColor(element) {
+         var currentColor = element.style.backgroundColor;
+         if(currentColor == "yellow") {
+            element.style.backgroundColor = "pink";
+         } else {
+            element.style.backgroundColor = "yellow"; 
+         }
+      }
+   </script>
+</center>
+</body>
+</html>
